@@ -9,7 +9,7 @@ module.exports = {
     path: path.join(__dirname, "js"),
     filename: "[name].bundle.js",
     chunkFilename: "[id].chunk.js",
-    publicPath: "/thunderdome/webpack-example/js/"
+    publicPath: "js/"
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('common', "common.js")

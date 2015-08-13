@@ -5,10 +5,22 @@
         }
     },
     "index.md",
+    {
+        "attr": {
+            "data-background": "images/leg.jpg",
+            "data-background-size":"500px"
+        }
+    },
+    "break.md",
     "how-did.md",
     {
         "attr": {
             "data-background": "images/javascript.png"
+        }
+    },
+    {
+        "attr": {
+            "data-background": "images/javascript1.png"
         }
     },
     [
@@ -46,6 +58,7 @@
         "webpack/intro.md",
         "webpack/webpack1.md",
         "webpack/webpack2.md",
+        "webpack/webpack2a.md",
         "webpack/webpack3.md",
         "webpack/webpack4.md"
     ],

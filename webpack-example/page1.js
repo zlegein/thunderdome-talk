@@ -1,4 +1,4 @@
 var common = require("./common");
 require(["./shared"], function(shared) {
-  shared("This is page 1");
+  shared("page 1");
 });

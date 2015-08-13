@@ -1,5 +1,7 @@
-Can dynamically load your javascript
+Modules, modules, modules
 
-Can replace grunt or gulp
+- building
+- transforming
+- live updating modules
 
 Back to configuration

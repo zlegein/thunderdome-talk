@@ -7,6 +7,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var wrench = require('wrench');
 
 /**
  *  This will load all js or coffee files in the gulp directory
