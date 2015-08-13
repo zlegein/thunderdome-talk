@@ -1,3 +1,5 @@
-splits your app into multiple files
+Can dynamically load your javascript
 
-can replace grunt or gulp
+Can replace grunt or gulp
+
+Back to configuration

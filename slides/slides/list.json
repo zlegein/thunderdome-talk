@@ -5,7 +5,6 @@
         }
     },
     "index.md",
-    "who-is-zach.md",
     "how-did.md",
     {
         "attr": {
@@ -17,14 +16,16 @@
         "grunt/what-is1.md",
         "grunt/what-is2.md",
         "grunt/what-is3.md",
-        "grunt/what-is4.md"
+        "grunt/what-is4.md",
+        "grunt/what-is5.md"
     ],
     [
         "gulp/intro.md",
         "gulp/what-is1.md",
         "gulp/what-is2.md",
         "gulp/what-is3.md",
-        "gulp/what-is4.md"
+        "gulp/what-is4.md",
+        "gulp/what-is5.md"
     ],
     [
         "npm/intro.md",
@@ -33,12 +34,20 @@
             "attr": {
                 "data-background": "images/npm1.png"
             }
-        }
+        },
+        {
+            "attr": {
+                "data-background": "images/npm2.jpg"
+            }
+        },
+        "npm/what-is3.md"
     ],
     [
         "webpack/intro.md",
         "webpack/webpack1.md",
-        "webpack/webpack2.md"
+        "webpack/webpack2.md",
+        "webpack/webpack3.md",
+        "webpack/webpack4.md"
     ],
     "outtahere.md"
 ]

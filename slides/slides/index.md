@@ -6,4 +6,4 @@ Senior Consultant @objectpartners
 
 @zlegein
 
-[github.com/jondejong/mean-talk](https://github.com/jondejong/mean-talk)
+[github.com/zlegein/thunderdome-talk](https://github.com/zlegein/thunderdome-talk)
