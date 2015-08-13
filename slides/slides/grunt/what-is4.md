@@ -1,5 +1,5 @@
 
-    grunt.initConfig({
+```grunt.initConfig({
       clean: {
         src: ['build/app.js', 'build/vendor.js']
       },
@@ -13,4 +13,4 @@
 
       concat: {
         'build/app.js': ['build/vendors.js', 'build/app.js']
-      }
+      }```
