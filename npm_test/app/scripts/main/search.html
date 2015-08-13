@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creationDate="main.creationDate" />
+  </div>
+
+  <div class="jumbotron text-center">
+    <p>
+      <input type="text" class="form-control" ng-model="search.selectedCity" typeahead="city as city.name for city in search.search($viewValue)" placeholder="Enter state">
+      <!--<input type="text" class="form-control" ng-model="search.selectedCity"-->
+      <!--typeahead="city as city.name for city in search.search($viewValue)" placeholder="Enter city">-->
+    </p>
+    <p>
+      <button class="btn btn-primary" ng-click="search.getTideInformation()">Get Tides</button>
+    </p>
+  </div>
+
+  <tides tide-data="search.data"></tides>
+
+</div>

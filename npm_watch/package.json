@@ -1,0 +1,21 @@
+{
+  "name": "yata",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "~0.12.36",
+    "karma-cli": "~0.1.0",
+    "karma-jasmine":"~0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-ng-html2js-preprocessor": "~0.1.2",
+    "nodemon": "^1.2.1",
+    "parallelshell": "^1.0.0"
+  },
+  "scripts": {
+    "test": "karma start --singleRun",
+
+    "watch": "parallelshell \"npm run watch:test -s\" \"npm run watch:build -s\"",
+    "watch:test": "karma start",
+    "watch:build": "nodemon -q -w assets/ --ext '.' --exec 'npm run build'"
+  }
+}

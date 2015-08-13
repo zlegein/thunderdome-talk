@@ -1,0 +1,38 @@
+{
+  "name": "gulp-scripts-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-concat": "^2.4.3",
+    "path": "^0.11.14",
+    "autoprefixer-loader": "^1.0.0",
+    "connect": "^2.14.4",
+    "connect-livereload": "^0.4.0",
+    "connect-modrewrite": "*",
+    "gulp": "^3.6.0",
+    "gulp-rimraf":"latest",
+    "gulp-rev":"latest",
+    "gulp-stylus":"latest",
+    "gulp-browserify":"latest",
+    "gulp-inject":"1.5.0",
+    "gulp-cache": "^0.1.1",
+    "gulp-clean": "^0.2.4",
+    "gulp-filter": "^0.4.1",
+    "gulp-flatten": "^0.0.2",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-livereload": "^1.2.0",
+    "gulp-load-plugins": "^0.5.0",
+    "gulp-order": "^1.1.1",
+    "gulp-size": "^0.3.0",
+    "gulp-html-replace": "*",
+    "opn": "^0.1.1",
+    "wiredep": "^1.4.3"
+  }
+
+}

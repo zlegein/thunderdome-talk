@@ -1,0 +1,25 @@
+<div class="tides">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>{{tideData.tide.tideInfo[0].tideSite}}</h3>
+      </div>
+    </div>
+  </div>
+
+  <accordion close-others="false">
+    <accordion-group is-open="true" ng-repeat="date in groupByDate(tideData.tide.tideSummary,'date.mday')">
+      <accordion-heading><span class="text-center">{{date.day * 1000 | date:'longDate'}}</span></accordion-heading>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-2" ng-repeat="event in date.data">
+            <div>{{event.data.type}}</div>
+            <div ng-if="event.data.height">{{event.data.height}}</div>
+            <div>{{event.date.epoch * 1000 | date:'shortTime'}}</div>
+          </div>
+        </div>
+      </div>
+    </accordion-group>
+  </accordion>
+
+  </div>

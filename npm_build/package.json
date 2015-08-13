@@ -1,0 +1,26 @@
+{
+  "name": "yata",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "~0.12.36",
+    "karma-cli": "~0.1.0",
+    "karma-jasmine": "~0.3.6",
+    "karma-ng-html2js-preprocessor": "~0.1.2",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "node-sass": "^3.2.0",
+    "nodemon": "^1.2.1",
+    "parallelshell": "^1.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "prebuild": "npm run clean -s",
+    "build": "npm run build:scripts -s && npm run build:styles -s",
+    "build:scripts": "browserify -d -e app/scripts -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json 'dist/{name}{hash}{ext}'",
+    "build:styles": "node-sass --source-map-embed app/styles/main.scss -o dist/  && hashmark -s -l 8 -m assests.json dist/main.css 'dist/{name}{hash}{ext}'",
+    "test": "karma start --singleRun",
+    "watch": "parallelshell \"npm run watch:test -s\" \"npm run watch:build -s\"",
+    "watch:test": "karma start",
+    "watch:build": "nodemon -q -w assets/ --ext '.' --exec 'npm run build'"
+  }
+}

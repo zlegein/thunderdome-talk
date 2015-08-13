@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <p>
+    <input type="text" class="form-control" ng-model="search.selectedCity" bs-options="city as city.name for city in search.search($viewValue)" placeholder="Enter state" bs-typeahead>
+    <!--<input type="text" class="form-control" ng-model="search.selectedCity"-->
+           <!--typeahead="city as city.name for city in search.search($viewValue)" placeholder="Enter city">-->
+  </p>
+  <p>
+    <button class="btn btn-primary" ng-click="search.getTideInformation()">Get Tides</button>
+  </p>
+</div>
+
+<tide-results tide-data="search.data"></tide-results>
